@@ -1,16 +1,16 @@
 package com.atMoon.interfaces;
 
 public interface interfaceTest {
-	// 1.�ӿڲ����г�Ա����
+	// 1.接口不能有成员变量
 	// public abstract String string;
-	//2.�ӿڲ����й�����
+	//2.接口不能有构造器
 	//public interfaceTest() ;
-	//3.�ӿڷ�����Ĭ�����η���public�Ҳ���ʹ���������η�����
+	//3.接口方法的默认修饰符是public且不可使用其它修饰符修饰
 	//public abstract void method3();
-	//4.�ӿڲ�����main����,��������
-	//5.�ӿ�ֻ���Լ̳�һ�����������ӿ�
-	//6.��������ӿ������ӷ�������ô�����ı�ʵ�ָýӿڵ��ࡣ
-	//7.�ӿ�����΢�е����ģ���Ϊ����Ҫʱ��ȥѰ��������ʵ�ֵķ�����
+	//4.接口不能有main方法,不能运行
+	//5.接口只可以继承一个或多个其它接口
+	//6.如果你往接口中添加方法，那么你必须改变实现该接口的类。
+	//7.接口是稍微有点慢的，因为它需要时间去寻找在类中实现的方法。
 	public void method1();
 
 	public int method2(int a);

@@ -1,10 +1,10 @@
 package com.atMoon.list;
 
 /*
- * ArrayListºÍLinkedListµÄ´óÖÂÇø±ğÈçÏÂ:
- 1.ArrayListÊÇÊµÏÖÁË»ùÓÚ¶¯Ì¬Êı×éµÄÊı¾İ½á¹¹£¬LinkedList»ùÓÚÁ´±íµÄÊı¾İ½á¹¹¡£ 
- 2.¶ÔÓÚËæ»ú·ÃÎÊgetºÍset£¬ArrayList¾õµÃÓÅÓÚLinkedList£¬ÒòÎªLinkedListÒªÒÆ¶¯Ö¸Õë¡£ 
- 3.¶ÔÓÚĞÂÔöºÍÉ¾³ı²Ù×÷addºÍremove£¬LinedList±È½ÏÕ¼ÓÅÊÆ£¬ÒòÎªArrayListÒªÒÆ¶¯Êı¾İ¡£ 
+ * ArrayListå’ŒLinkedListçš„å¤§è‡´åŒºåˆ«å¦‚ä¸‹:
+ 1.ArrayListæ˜¯å®ç°äº†åŸºäºåŠ¨æ€æ•°ç»„çš„æ•°æ®ç»“æ„ï¼ŒLinkedListåŸºäºé“¾è¡¨çš„æ•°æ®ç»“æ„ã€‚ 
+ 2.å¯¹äºéšæœºè®¿é—®getå’Œsetï¼ŒArrayListè§‰å¾—ä¼˜äºLinkedListï¼Œå› ä¸ºLinkedListè¦ç§»åŠ¨æŒ‡é’ˆã€‚ 
+ 3.å¯¹äºæ–°å¢å’Œåˆ é™¤æ“ä½œaddå’Œremoveï¼ŒLinedListæ¯”è¾ƒå ä¼˜åŠ¿ï¼Œå› ä¸ºArrayListè¦ç§»åŠ¨æ•°æ®ã€‚ 
  */
 
 public class ListTest {

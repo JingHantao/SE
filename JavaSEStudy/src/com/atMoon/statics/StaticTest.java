@@ -1,9 +1,5 @@
 package com.atMoon.statics;
 
-import java.lang.reflect.Method;
-
-import com.atMoon.interfaces.interfaceTest;
-
 public class StaticTest {
 	static String xString="1";
 	static int y=1;

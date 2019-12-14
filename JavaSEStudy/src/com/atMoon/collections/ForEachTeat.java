@@ -2,7 +2,6 @@ package com.atMoon.collections;
 
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.Iterator;
 
 public class ForEachTeat {
 
@@ -17,13 +16,13 @@ public class ForEachTeat {
 		booksCollection.add("three");
 		System.out.println(booksCollection);
 
-		// Ê¹ÓÃforeachÑ­»·
+		// ä½¿ç”¨foreachå¾ªç¯
 		for (Object object : booksCollection) {
 			String book = (String) object;
 			System.out.println(book);
 			if (book.equals("two")) {
 				System.out.println(book);
-				// foreachÖĞ Ñ­»·¸Ä±ä¼¯ºÏÃ»ÓĞÒâÒå
+				// foreachä¸­ å¾ªç¯æ”¹å˜é›†åˆæ²¡æœ‰æ„ä¹‰
 				// booksCollection.remove(book);
 			}
 

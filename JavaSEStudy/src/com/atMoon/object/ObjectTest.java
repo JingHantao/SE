@@ -1,7 +1,5 @@
 package com.atMoon.object;
 
-import java.util.concurrent.Semaphore;
-
 import org.junit.Test;
 
 public class ObjectTest {
@@ -24,25 +22,25 @@ public class ObjectTest {
 		// TODO Auto-generated method stub
 		String str1 = new String("hello");
 		String str2 = "hello";
-		//== �Ƚϵ��Ǳ���(ջ)�ڴ��д�ŵĶ����(��)�ڴ��ַ��
-		//�����ж���������ĵ�ַ�Ƿ���ͬ�����Ƿ���ָ��ͬһ������
-		//�Ƚϵ������������ϵ�ָ�������
+		//== 比较的是变量(栈)内存中存放的对象的(堆)内存地址，
+		//用来判断两个对象的地址是否相同，即是否是指相同一个对象。
+		//比较的是真正意义上的指针操作。
 		if (str1 == "hello") {
 			System.out.println("str1==\"hello\":" + true);
 		} else {
 			System.out.println("str1==\"hello\":" + false);
 		}
-        //equals�����Ƚϵ�����������������Ƿ���ȣ�
-		//�������е��඼�Ǽ̳���java.lang.Object��ģ��������������ж���
-		//���û�жԸ÷������и��ǵĻ������õ���Ȼ��Object���еķ�����
-		//��Object�е�equals�������ص�ȴ��==���жϡ�
+        //equals用来比较的是两个对象的内容是否相等，
+		//由于所有的类都是继承自java.lang.Object类的，所以适用于所有对象，
+		//如果没有对该方法进行覆盖的话，调用的仍然是Object类中的方法，
+		//而Object中的equals方法返回的却是==的判断。
 		/*
-		 * ��equals������Ҫע����㣺
-����		1   �Է��ԣ�����������ֵX��x.equals(x)�ķ���ֵһ��Ϊtrue��
-����		2   �Գ��ԣ������κ�����ֵx,y,���ҽ���y.equals(x)����ֵΪtrueʱ��x.equals(y)�ķ���ֵһ��Ϊtrue��
-����		3   �����ԣ����x.equals(y)=true, y.equals(z)=true,��x.equals(z)=true ��
-��		4   һ���ԣ��������ȽϵĶ���û�κθı䣬�����ȽϵĽ��Ҳ��Ӧ�����κθı䣻
-����		5   �ǿ��ԣ��κηǿյ�����ֵX��x.equals(null)�ķ���ֵһ��Ϊfalse ��
+		 * 对equals重新需要注意五点：
+　　		1   自反性：对任意引用值X，x.equals(x)的返回值一定为true；
+　　		2   对称性：对于任何引用值x,y,当且仅当y.equals(x)返回值为true时，x.equals(y)的返回值一定为true；
+　　		3   传递性：如果x.equals(y)=true, y.equals(z)=true,则x.equals(z)=true ；
+　		4   一致性：如果参与比较的对象没任何改变，则对象比较的结果也不应该有任何改变；
+　　		5   非空性：任何非空的引用值X，x.equals(null)的返回值一定为false 。
 		 */
 		if (str1.equals("hello")) {
 			System.out.println("str1.equals(\"hello\"):" + true);

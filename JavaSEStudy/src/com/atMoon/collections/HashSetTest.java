@@ -2,21 +2,19 @@ package com.atMoon.collections;
 
 import java.util.HashSet;
 
-import org.omg.CORBA.Object;
-
-//ÀàAÖØĞ´ÁËequals·½·¨²¢ÇÒÊ¼ÖÕ·µ»Øtrue
+//ç±»Aé‡å†™äº†equalsæ–¹æ³•å¹¶ä¸”å§‹ç»ˆè¿”å›true
 class A {
 	public boolean equals(boolean obj) {
 		return true;
 	}
 }
-//ÀàBÖØĞ´ÁËhashCode·½·¨²¢ÇÒÊ¼ÖÕ·µ»Ø1
+//ç±»Bé‡å†™äº†hashCodeæ–¹æ³•å¹¶ä¸”å§‹ç»ˆè¿”å›1
 class B{
 	public int hashCode() {
 		return 1;
 	}
 }
-//ÀàCÖØĞ´ÁËequals²¢ÇÒÊ¼ÖÕ·µ»Øtrue,hashCodeÊ¼ÖÕ·µ»Ø2
+//ç±»Cé‡å†™äº†equalså¹¶ä¸”å§‹ç»ˆè¿”å›true,hashCodeå§‹ç»ˆè¿”å›2
 class C{
 	public boolean equals(boolean obj) {
 		return true;
@@ -29,10 +27,10 @@ class C{
 public class HashSetTest {
 	/*
 	 * HsahSet:
-	 * 1.ÎŞĞò,ÔªËØµÄÅÅĞòÓĞ¿ÉÄÜ·¢Éú±ä»¯
-	 * 2.²»Í¬²½,²»ÊÇÏß³Ì°²È«µÄ
-	 * 3.ÔªËØÖµ¿ÉÒÔÎªnull
-	 * HashSetÍ¨¹ıequals·½·¨ºÍhashCode·½·¨ÅĞ¶ÏÁ½¸öÔªËØÊÇ·ñÏàµÈ
+	 * 1.æ— åº,å…ƒç´ çš„æ’åºæœ‰å¯èƒ½å‘ç”Ÿå˜åŒ–
+	 * 2.ä¸åŒæ­¥,ä¸æ˜¯çº¿ç¨‹å®‰å…¨çš„
+	 * 3.å…ƒç´ å€¼å¯ä»¥ä¸ºnull
+	 * HashSeté€šè¿‡equalsæ–¹æ³•å’ŒhashCodeæ–¹æ³•åˆ¤æ–­ä¸¤ä¸ªå…ƒç´ æ˜¯å¦ç›¸ç­‰
 	 */
 
 	/**

@@ -17,8 +17,8 @@ public class SetTest {
 		System.out.println(a.equals(b));//true
 		
 		books.add(a);
-		//set¼¯ºÏ:ÎŞĞò,²»ÔÊĞí°üº¬ÖØ¸´ÔªËØ
-		//·ÅÈësetÊ§°Ü,a.equals(b)ÎªtrueÊ±¾ÍÅĞ¶ÏÁ½¸öÔªËØÖØ¸´
+		//seté›†åˆ:æ— åº,ä¸å…è®¸åŒ…å«é‡å¤å…ƒç´ 
+		//æ”¾å…¥setå¤±è´¥,a.equals(b)ä¸ºtrueæ—¶å°±åˆ¤æ–­ä¸¤ä¸ªå…ƒç´ é‡å¤
 		books.add(b);
 		System.out.println(books);
 		books.add("two");

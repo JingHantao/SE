@@ -2,9 +2,9 @@ package com.atMoon.computer;
 /**
  * 
  * @author moon
- * @date 2018Äê9ÔÂ18ÈÕ ÏÂÎç5:38:24
+ * @date 2018å¹´9æœˆ18æ—¥ ä¸‹åˆ5:38:24
  * @version 1.0
- * 59.ÊµÏÖÒ»¸ö³ÌÐòÀ´ÅÐ¶ÏÈçÏÂÆåÅÌÊÇ·ñÓÐÎå×ÓÁ¬ÖéÏÖÏó£¨Ö»¿¼ÂÇºáºÍÊú£©£»Èç¹ûÓÐ£¬ÇëÊä³öÕâ5¿ÅÆå×ÓµÄ×ø±ê¡£ÓÐ¼¸ÖÖÊä³ö¼¸ÖÖ¡£
+ * 59.å®žçŽ°ä¸€ä¸ªç¨‹åºæ¥åˆ¤æ–­å¦‚ä¸‹æ£‹ç›˜æ˜¯å¦æœ‰äº”å­è¿žç çŽ°è±¡ï¼ˆåªè€ƒè™‘æ¨ªå’Œç«–ï¼‰ï¼›å¦‚æžœæœ‰ï¼Œè¯·è¾“å‡ºè¿™5é¢—æ£‹å­çš„åæ ‡ã€‚æœ‰å‡ ç§è¾“å‡ºå‡ ç§ã€‚
 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 1 0 0 0 0 0 0
@@ -41,7 +41,7 @@ public class T59 {
 			for (int j = 0; j < Arr.length-5; j++) {
 
 				if (Arr[i][j] ==1) {
-					boolean row = true;//ÅÐ¶ÏÐÐ
+					boolean row = true;//åˆ¤æ–­è¡Œ
 					for(int k=1;k<5;k++){
 						if(Arr[i][j+k]!=Arr[i][j]){
 							row=false;
@@ -51,7 +51,7 @@ public class T59 {
 						}
 					}
 					if(row){
-						System.out.println("µÚ "+(i+1)+" ÐÐ´æÔÚ5¸ö1");
+						System.out.println("ç¬¬ "+(i+1)+" è¡Œå­˜åœ¨5ä¸ª1");
 					}
 				}
 				else{
@@ -63,7 +63,7 @@ public class T59 {
 			for (int j = 0; j < Arr.length; j++) {
 
 				if (Arr[i][j] ==1) {
-					boolean column = true;//ÅÐ¶ÏÁÐ
+					boolean column = true;//åˆ¤æ–­åˆ—
 					for(int k=1;k<5;k++){
 						if(Arr[i+k][j]!=Arr[i][j]){
 							column=false;
@@ -73,7 +73,7 @@ public class T59 {
 						}
 					}
 					if(column){
-						System.out.println("µÚ "+(j+1)+" ÁÐ´æÔÚ5¸ö1");
+						System.out.println("ç¬¬ "+(j+1)+" åˆ—å­˜åœ¨5ä¸ª1");
 					}
 				}
 				else{

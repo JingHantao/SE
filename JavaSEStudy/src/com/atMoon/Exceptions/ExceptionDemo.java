@@ -1,7 +1,5 @@
 package com.atMoon.Exceptions;
 
-import java.util.concurrent.CopyOnWriteArrayList;
-
 public class ExceptionDemo {
 	
 	public static int func() {

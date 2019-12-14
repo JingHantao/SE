@@ -1,18 +1,16 @@
 package com.atMoon.collections;
 
 /*
- * ÊµÏÖÁËSortedSet½Ó¿Ú
- * TreeSetÀïÃæÔªËØÊÇÓĞĞòµÄ,Ò²²»ÔÊĞíÓĞÖØ¸´µÄÔªËØ
- * Í¨¹ı compareTo(Object object)±È½Ï¶ÔÏóÊÇ·ñÏàµÈ ·µ»ØÖµÎª0ÔòÈÏÎªÏàµÈ
- * ·ñÔò¾ÍÈÏÎª²»ÏàµÈ
- * ÖØĞ´¶ÔÏóequals·½·¨¹æÔò:±£Ö¤¸Ã·½·¨ÓëcompareTo(Object o)·½·¨ÓĞÒ»ÖÂµÄ½á¹û:
- * equals·µ»Øtrue->compareTo(Object o)Ó¦¸Ã·µ»Ø0
+ * å®ç°äº†SortedSetæ¥å£
+ * TreeSeté‡Œé¢å…ƒç´ æ˜¯æœ‰åºçš„,ä¹Ÿä¸å…è®¸æœ‰é‡å¤çš„å…ƒç´ 
+ * é€šè¿‡ compareTo(Object object)æ¯”è¾ƒå¯¹è±¡æ˜¯å¦ç›¸ç­‰ è¿”å›å€¼ä¸º0åˆ™è®¤ä¸ºç›¸ç­‰
+ * å¦åˆ™å°±è®¤ä¸ºä¸ç›¸ç­‰
+ * é‡å†™å¯¹è±¡equalsæ–¹æ³•è§„åˆ™:ä¿è¯è¯¥æ–¹æ³•ä¸compareTo(Object o)æ–¹æ³•æœ‰ä¸€è‡´çš„ç»“æœ:
+ * equalsè¿”å›true->compareTo(Object o)åº”è¯¥è¿”å›0
  */
 
 import java.util.Comparator;
 import java.util.TreeSet;
-
-import junit.extensions.TestSetup;
 
 class Z implements Comparable {
 	int age;
@@ -26,7 +24,7 @@ class Z implements Comparable {
 	}
 
 	@Override
-	// ÖØĞ´Comparable·½·¨ Ê¼ÖÕ·µ»Ø1
+	// é‡å†™Comparableæ–¹æ³• å§‹ç»ˆè¿”å›1
 	public int compareTo(Object o) {
 		// TODO Auto-generated method stub
 		return 1;
@@ -34,7 +32,7 @@ class Z implements Comparable {
 
 }
 
-//ÊµÏÖ¶¨ÖÆÅÅĞòDemo
+//å®ç°å®šåˆ¶æ’åºDemo
 class M{
 	int age;
 	public M(int age) {
@@ -55,18 +53,18 @@ public class TreeSetTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		TreeSet numsSet = new TreeSet();
-		// java×Ô¶¯×°Ïä int->Interger
+		// javaè‡ªåŠ¨è£…ç®± int->Interger
 		numsSet.add(5);
-		// numsSet.add(5);//ÖØ¸´ÔªËØÎŞ·¨²åÈë
+		// numsSet.add(5);//é‡å¤å…ƒç´ æ— æ³•æ’å…¥
 		numsSet.add(10);
 		numsSet.add(2);
 		numsSet.add(-3);
 		System.out.println("numsSet:" + numsSet);
 		System.out.println("numsSet.first:" + numsSet.first());
 		System.out.println("numsSet.last:" + numsSet.last());
-		System.out.println("numsSet Ğ¡ÓÚ5µÄ×Ó¼¯(²»°üº¬5):" + numsSet.headSet(5));
-		System.out.println("numsSet ´óÓÚ5µÄ×Ó¼¯(°üº¬5):" + numsSet.tailSet(5));
-		System.out.println("numSet (-3,5)µÄ×Ó¼¯(°üº¬-3,²»°üº¬5)"
+		System.out.println("numsSet å°äº5çš„å­é›†(ä¸åŒ…å«5):" + numsSet.headSet(5));
+		System.out.println("numsSet å¤§äº5çš„å­é›†(åŒ…å«5):" + numsSet.tailSet(5));
+		System.out.println("numSet (-3,5)çš„å­é›†(åŒ…å«-3,ä¸åŒ…å«5)"
 				+ numsSet.subSet(-3, 5));
 		
 		System.out.println("-----------");
@@ -74,13 +72,13 @@ public class TreeSetTest {
 		Z z1=new Z(6);
 		set.add(z1);
 		System.out.println(set.add(z1));
-		//TreeSet»áÈÏÎªÁ½¸ö¶ÔÏó²»ÏàµÈ(ÖØĞ´ÁËcompareTo(Object o)·½·¨µÄÔµ¹Ê)
+		//TreeSetä¼šè®¤ä¸ºä¸¤ä¸ªå¯¹è±¡ä¸ç›¸ç­‰(é‡å†™äº†compareTo(Object o)æ–¹æ³•çš„ç¼˜æ•…)
 		System.out.println(set);
 		((Z)(set.first())).age=9;
-		System.out.println(((Z)(set.last())).age);//Êä³ö9 ËµÃ÷Á½¸ö¶ÔÏóÏàÍ¬ ¶¼±äÎªÁË9
+		System.out.println(((Z)(set.last())).age);//è¾“å‡º9 è¯´æ˜ä¸¤ä¸ªå¯¹è±¡ç›¸åŒ éƒ½å˜ä¸ºäº†9
 		
 		System.out.println("-----------");
-		//ÓÉComparator¶ÔÏó¸ºÔğ¼¯ºÏÔªËØµÄÅÅĞò¹æÔò
+		//ç”±Comparatorå¯¹è±¡è´Ÿè´£é›†åˆå…ƒç´ çš„æ’åºè§„åˆ™
 		TreeSet set2=new TreeSet(new Comparator() {
 			public int compare(Object o1,Object o2) {
 				M m1=(M)o1;

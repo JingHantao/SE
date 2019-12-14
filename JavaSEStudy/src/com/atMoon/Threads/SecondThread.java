@@ -1,14 +1,14 @@
 package com.atMoon.Threads;
 
-//ÊµÏÖRunnable½Ó¿ÚÀ´´´½¨Ïß³ÌÀà
+//å®ç°Runnableæ¥å£æ¥åˆ›å»ºçº¿ç¨‹ç±»
 public class SecondThread implements Runnable {
 	private int i;
 
-	// run()·½·¨Í¬ÑùÊÇÏß³ÌÖ´ĞĞÌå
+	// run()æ–¹æ³•åŒæ ·æ˜¯çº¿ç¨‹æ‰§è¡Œä½“
 	public void run() {
 		for (; i < 100; i++) {
-			// µ±Ïß³ÌÀàÊµÏÖRunnable½Ó¿ÚÊ±
-			// Èç¹ûÏë»ñÈ¡µ±Ç°Ïß³Ì£¬Ö»ÄÜÓÃThread.currentThread()·½·¨
+			// å½“çº¿ç¨‹ç±»å®ç°Runnableæ¥å£æ—¶
+			// å¦‚æœæƒ³è·å–å½“å‰çº¿ç¨‹ï¼Œåªèƒ½ç”¨Thread.currentThread()æ–¹æ³•
 			System.out.println(Thread.currentThread().getName() + " " + i);
 		}
 	}
@@ -18,10 +18,10 @@ public class SecondThread implements Runnable {
 			for (int i = 0; i < 100; i++) {
 				System.out.println(Thread.currentThread().getName() + "  " + i);
 				if (i == 20) {
-					SecondThread st = new SecondThread(); // ¢Ù
-					// Í¨¹ınew Thread(target , name)·½·¨´´½¨ĞÂÏß³Ì
-					new Thread(st, "ĞÂÏß³Ì1").start();
-					new Thread(st, "ĞÂÏß³Ì2").start();
+					SecondThread st = new SecondThread(); // â‘ 
+					// é€šè¿‡new Thread(target , name)æ–¹æ³•åˆ›å»ºæ–°çº¿ç¨‹
+					new Thread(st, "æ–°çº¿ç¨‹1").start();
+					new Thread(st, "æ–°çº¿ç¨‹2").start();
 				}
 			}
 		}

@@ -20,10 +20,10 @@ public class IteratorTest {
 			String book=(String) iterator.next();
 			System.out.println(book);
 			if( book.equals("two")){
-				//Ê¹ÓÃIteratorµü´ú¹ı³ÌÖĞ,²»¿ÉĞŞ¸Ä¼¯ºÏÔªËØ
+				//ä½¿ç”¨Iteratorè¿­ä»£è¿‡ç¨‹ä¸­,ä¸å¯ä¿®æ”¹é›†åˆå…ƒç´ 
 				//booksCollection.remove(book);
 				iterator.remove();
-				//¶ÔbookÔªËØ¸³Öµ,²»»á¸Ä±ä¼¯ºÏÔªËØ±¾Éí
+				//å¯¹bookå…ƒç´ èµ‹å€¼,ä¸ä¼šæ”¹å˜é›†åˆå…ƒç´ æœ¬èº«
 				book="test";				
 			}
 			System.out.println(booksCollection);

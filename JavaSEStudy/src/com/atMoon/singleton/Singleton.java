@@ -1,16 +1,14 @@
 package com.atMoon.singleton;
 
-import org.junit.Test;
-
 /*
- * µ¥ÀıÄ£Ê½
+ * å•ä¾‹æ¨¡å¼
  */
 public class Singleton {
-	// ¶öººÊ½µ¥Àı Àà¼ÓÔØµÄÊ±ºò¾Í²úÉúÁËÊµÀı¶ÔÏó Ïß³Ì°²È«
+	// é¥¿æ±‰å¼å•ä¾‹ ç±»åŠ è½½çš„æ—¶å€™å°±äº§ç”Ÿäº†å®ä¾‹å¯¹è±¡ çº¿ç¨‹å®‰å…¨
 	private static Singleton singleton = new Singleton();
 
-	private Singleton() {// ¹¹Ôì·½·¨
-		System.out.println("¹¹Ôì·½·¨---");
+	private Singleton() {// æ„é€ æ–¹æ³•
+		System.out.println("æ„é€ æ–¹æ³•---");
 	}
 
 	private static Singleton getSingleton() {
@@ -18,7 +16,7 @@ public class Singleton {
 	}
 
 	public static void main(String[] args) {
-		//²âÊÔµ¥Àı
+		//æµ‹è¯•å•ä¾‹
 		Singleton s1 = Singleton.singleton;
 		System.out.println("s1:" + s1.hashCode());
 		Singleton s2 = Singleton.singleton;

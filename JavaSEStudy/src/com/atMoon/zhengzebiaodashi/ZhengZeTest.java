@@ -3,15 +3,15 @@ package com.atMoon.zhengzebiaodashi;
 public class ZhengZeTest {
 	
 	public static void main(String [] args) {
-		//replaceFirst ºÍ replaceAll ·½·¨ÓÃÀ´Ìæ»»Æ¥ÅäÕıÔò±í´ïÊ½µÄÎÄ±¾¡£
-		//²»Í¬µÄÊÇ£¬replaceFirst Ìæ»»Ê×´ÎÆ¥Åä£¬replaceAll Ìæ»»ËùÓĞÆ¥Åä
+		//replaceFirst å’Œ replaceAll æ–¹æ³•ç”¨æ¥æ›¿æ¢åŒ¹é…æ­£åˆ™è¡¨è¾¾å¼çš„æ–‡æœ¬ã€‚
+		//ä¸åŒçš„æ˜¯ï¼ŒreplaceFirst æ›¿æ¢é¦–æ¬¡åŒ¹é…ï¼ŒreplaceAll æ›¿æ¢æ‰€æœ‰åŒ¹é…
 		String classFileByreplaceAll="com.atMoon.".replaceAll(".", "/")+"MyClass.class";
-		//.£¨µãºÅ£©Ò²ÊÇÒ»¸öÕıÔò±í´ïÊ½£¬ËüÆ¥ÅäÈÎºÎÒ»¸ö×Ö·ûÈç£º"a" »ò "1"¡£
-		//\. Æ¥Åä "."
+		//.ï¼ˆç‚¹å·ï¼‰ä¹Ÿæ˜¯ä¸€ä¸ªæ­£åˆ™è¡¨è¾¾å¼ï¼Œå®ƒåŒ¹é…ä»»ä½•ä¸€ä¸ªå­—ç¬¦å¦‚ï¼š"a" æˆ– "1"ã€‚
+		//\. åŒ¹é… "."
 		String classFileByreplaceFirst="com.atMoon.".replaceFirst(".", "/")+"MyClass.class";
-		//replace ·½·¨Ö±½ÓÌæ»»×Ö·û´®,µÚ¶ş¸ö²ÎÊıÌæ»»ËùÓĞµÄµÚÒ»¸ö²ÎÊıµÄÀàÈİ ×îºó·µ»ØÒ»¸öĞÂµÄ×Ö·û´®
+		//replace æ–¹æ³•ç›´æ¥æ›¿æ¢å­—ç¬¦ä¸²,ç¬¬äºŒä¸ªå‚æ•°æ›¿æ¢æ‰€æœ‰çš„ç¬¬ä¸€ä¸ªå‚æ•°çš„ç±»å®¹ æœ€åè¿”å›ä¸€ä¸ªæ–°çš„å­—ç¬¦ä¸²
 		String classFileByreplace="com.atMoon.".replace(".", "/")+"MyClass.class";
-		//ÕıÔò±í´ïÊ½Ìæ»».µÄÕıÈ·Ê¹ÓÃ:\\.
+		//æ­£åˆ™è¡¨è¾¾å¼æ›¿æ¢.çš„æ­£ç¡®ä½¿ç”¨:\\.
 		String classFileByreplaceAllSuccess="com.atMoon.".replaceAll("\\.", "/")+"MyClass.class";
 		
 		System.out.println("classFileByreplaceAll:"+classFileByreplaceAll);

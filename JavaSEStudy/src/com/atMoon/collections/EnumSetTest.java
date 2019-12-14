@@ -4,8 +4,8 @@ import java.util.EnumSet;
 /*
  * /**
      * 
-     * Ã¶¾ÙÖĞÓĞÒ»¸ö×Ô´øµÄ¾²Ì¬·½·¨values(),·µ»ØenumÊµÀıµÄÊı¾İ²¢ÇÒ¸ÃÊı×éÖĞµÄÔªËØË³ĞòºÍÉùÃ÷Ê±µÄË³ĞòÒ»Ñù 
-     * Ã¶¾ÙÒ²¿ÉÒÔÏñÆÕÍ¨µÄÀàÒ»Ñù¿ÉÒÔÌí¼ÓÊôĞÔºÍ·½·¨£¬¿ÉÒÔÎªËüÌí¼Ó¾²Ì¬ºÍ·Ç¾²Ì¬µÄÊôĞÔ»ò·½·¨
+     * æšä¸¾ä¸­æœ‰ä¸€ä¸ªè‡ªå¸¦çš„é™æ€æ–¹æ³•values(),è¿”å›enumå®ä¾‹çš„æ•°æ®å¹¶ä¸”è¯¥æ•°ç»„ä¸­çš„å…ƒç´ é¡ºåºå’Œå£°æ˜æ—¶çš„é¡ºåºä¸€æ · 
+     * æšä¸¾ä¹Ÿå¯ä»¥åƒæ™®é€šçš„ç±»ä¸€æ ·å¯ä»¥æ·»åŠ å±æ€§å’Œæ–¹æ³•ï¼Œå¯ä»¥ä¸ºå®ƒæ·»åŠ é™æ€å’Œéé™æ€çš„å±æ€§æˆ–æ–¹æ³•
      */
 
 enum Colors{
@@ -20,22 +20,22 @@ public class EnumSetTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//EnumSet.allOf()´´½¨Ò»¸ö°üº¬Ö¸¶¨Ã¶¾ÙÀàÀïËùÓĞÃ¶¾ÙÖµµÄEnumSet¼¯ºÏ
+		//EnumSet.allOf()åˆ›å»ºä¸€ä¸ªåŒ…å«æŒ‡å®šæšä¸¾ç±»é‡Œæ‰€æœ‰æšä¸¾å€¼çš„EnumSeté›†åˆ
 		EnumSet es1=EnumSet.allOf(Colors.class);
 		System.out.println("es1:"+es1);
-		//¿Õ¼¯ºÏ,ÀàĞÍÎªColors
+		//ç©ºé›†åˆ,ç±»å‹ä¸ºColors
 		EnumSet es2=EnumSet.noneOf(Colors.class);
 		System.out.println("es2:"+es2);
 		es2.add(Colors.Blue);
 		es2.add(Colors.Pink);
 		System.out.println("es2:"+es2);
-		//ÒÔÖ¸¶¨Ã¶¾ÙÖµ´´½¨ es3
+		//ä»¥æŒ‡å®šæšä¸¾å€¼åˆ›å»º es3
 		EnumSet es3=EnumSet.of(Colors.Red,Colors.Black);
 		System.out.println("es3:"+es3);
-		//EnumSet.range(a,b):´´½¨Ö¸¶¨Ã¶¾ÙÀàĞÍµÄEnumSet ¼¯ºÏÖµ´Óaµ½b(¶¼°üº¬)
+		//EnumSet.range(a,b):åˆ›å»ºæŒ‡å®šæšä¸¾ç±»å‹çš„EnumSet é›†åˆå€¼ä»aåˆ°b(éƒ½åŒ…å«)
 		EnumSet es4=EnumSet.range(Colors.Blue,Colors.Pink);
 		System.out.println("es4:"+es4);
-		//es5Îª°üº¬ColorsÖĞ²»°üº¬es4µÄÔªËØ
+		//es5ä¸ºåŒ…å«Colorsä¸­ä¸åŒ…å«es4çš„å…ƒç´ 
 		EnumSet es5=EnumSet.complementOf(es4);
 		System.out.println("es5:"+es5);
 		

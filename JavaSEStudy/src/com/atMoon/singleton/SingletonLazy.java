@@ -2,14 +2,14 @@ package com.atMoon.singleton;
 
 public class SingletonLazy {
 	
-	//ÀÁººÊ½ Àà±»ÊµÀı»¯µÄÊ±ºò²Å´´½¨ÊµÀı Ïß³Ì²»°²È« ĞèÒª¼Ó synchronized ¹Ø¼ü×ÖÍ¬²½
+	//æ‡’æ±‰å¼ ç±»è¢«å®ä¾‹åŒ–çš„æ—¶å€™æ‰åˆ›å»ºå®ä¾‹ çº¿ç¨‹ä¸å®‰å…¨ éœ€è¦åŠ  synchronized å…³é”®å­—åŒæ­¥
 	private static SingletonLazy singletonLazy;
 	
-	private SingletonLazy() {//¹¹Ôì·½·¨
-		System.out.println("SingletonLazy()¹¹Ôì·½·¨---");
+	private SingletonLazy() {//æ„é€ æ–¹æ³•
+		System.out.println("SingletonLazy()æ„é€ æ–¹æ³•---");
 	}
 	
-	private static synchronized SingletonLazy getSingletonLazy() {//Í¬²½·½·¨
+	private static synchronized SingletonLazy getSingletonLazy() {//åŒæ­¥æ–¹æ³•
 		if(singletonLazy==null) {
 			singletonLazy=new SingletonLazy();
 		}
@@ -21,7 +21,7 @@ public class SingletonLazy {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//²âÊÔ
+		//æµ‹è¯•
 		SingletonLazy s1=SingletonLazy.getSingletonLazy();
 		System.out.println("s1:" + s1.hashCode());
 		SingletonLazy s2=SingletonLazy.getSingletonLazy();

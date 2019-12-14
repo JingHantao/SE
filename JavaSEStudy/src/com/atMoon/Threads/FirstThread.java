@@ -1,6 +1,6 @@
 package com.atMoon.Threads;
 
-//¼Ì³ĞThread À´´´½¨Ïß³Ì
+//ç»§æ‰¿Thread æ¥åˆ›å»ºçº¿ç¨‹
 public class FirstThread extends Thread{
 
 	/**
@@ -9,12 +9,12 @@ public class FirstThread extends Thread{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		for(int j=0;j<100;j++) {
-			//Thread.currentThread():»ñÈ¡µ±Ç°Ïß³Ì
+			//Thread.currentThread():è·å–å½“å‰çº¿ç¨‹
 			System.out.println(Thread.currentThread().getName()+" "+j);
 			if(j==20) {
-				//´´½¨²¢Æô¶¯Ò»¸öÏß³Ì
+				//åˆ›å»ºå¹¶å¯åŠ¨ä¸€ä¸ªçº¿ç¨‹
 				new FirstThread().start();
-				//´´½¨²¢Æô¶¯µÚ¶ş¸öÏß³Ì
+				//åˆ›å»ºå¹¶å¯åŠ¨ç¬¬äºŒä¸ªçº¿ç¨‹
 				new FirstThread().start();
 				
 			}
@@ -23,12 +23,12 @@ public class FirstThread extends Thread{
 	}
 	
 	private int i;
-	//ÖØĞ´run()·½·¨  run·½·¨µÄ·½·¨Ìå¾ÍÊÇÏß³ÌÖ´ĞĞÌå
+	//é‡å†™run()æ–¹æ³•  runæ–¹æ³•çš„æ–¹æ³•ä½“å°±æ˜¯çº¿ç¨‹æ‰§è¡Œä½“
 	public void run() {
 		for (;i<100;i++) {
-			//µ±Ïß³ÌÀà¼Ì³ĞThreadÀàÊ±£¬Ö±½ÓÊ¹ÓÃthis¼´¿É»ñÈ¡µ±Ç°Ïß³Ì
-			// Thread¶ÔÏóµÄgetName()·µ»Øµ±Ç°Ïß³ÌµÄÃû×Ö
-			// Òò´Ë¿ÉÒÔÖ±½Óµ÷ÓÃgetName()·½·¨·µ»Øµ±Ç°Ïß³ÌµÄÃû×Ö
+			//å½“çº¿ç¨‹ç±»ç»§æ‰¿Threadç±»æ—¶ï¼Œç›´æ¥ä½¿ç”¨thiså³å¯è·å–å½“å‰çº¿ç¨‹
+			// Threadå¯¹è±¡çš„getName()è¿”å›å½“å‰çº¿ç¨‹çš„åå­—
+			// å› æ­¤å¯ä»¥ç›´æ¥è°ƒç”¨getName()æ–¹æ³•è¿”å›å½“å‰çº¿ç¨‹çš„åå­—
 			System.out.println(getName()+" "+i);
 		}
 	}

@@ -1,9 +1,9 @@
 package com.atMoon.Applet;
 
-import java.applet.Applet;
-import java.awt.Graphics;
-
 import org.junit.Test;
+
+import java.applet.Applet;
+import java.awt.*;
 
 public class AppletTest extends Applet {
 

@@ -1,10 +1,10 @@
 package com.atMoon.integers;
 
 /*
- *(»ù±¾Êı¾İÀàĞÍ:ÖµÀàĞÍ)Ô­Ê¼ÀàĞÍ£ºboolean£¬char£¬             byte£¬short£¬int£¬          long£¬float£¬double
- * (°ü×°Àà:ÒıÓÃÀàĞÍ)°ü×°ÀàĞÍ£ºBoolean£¬Character£¬Byte£¬Short£¬Integer£¬Long£¬Float£¬Double
- * ×°Ïä:int->Integer
- * ²ğÏä:Integer->int
+ *(åŸºæœ¬æ•°æ®ç±»å‹:å€¼ç±»å‹)åŸå§‹ç±»å‹ï¼šbooleanï¼Œcharï¼Œ             byteï¼Œshortï¼Œintï¼Œ          longï¼Œfloatï¼Œdouble
+ * (åŒ…è£…ç±»:å¼•ç”¨ç±»å‹)åŒ…è£…ç±»å‹ï¼šBooleanï¼ŒCharacterï¼ŒByteï¼ŒShortï¼ŒIntegerï¼ŒLongï¼ŒFloatï¼ŒDouble
+ * è£…ç®±:int->Integer
+ * æ‹†ç®±:Integer->int
  */
 
 public class IntergerTest {
@@ -17,15 +17,15 @@ public class IntergerTest {
 		int i = 128;
 		Integer i2 = 128;
 		Integer i3 = new Integer(128);
-		System.out.println(i == i2); // Integer»á×Ô¶¯²ğÏäÎªint£¬ËùÒÔÎªtrue
-		System.out.println(i == i3); // true£¬ÀíÓÉÍ¬ÉÏ
-		// Integer.valueOf()º¯Êı¶ÔÓÚ-128µ½127Ö®¼äµÄÊı£¬»á½øĞĞ»º´æ£¬ Integer i4 = 127Ê±£¬»á½«127½øĞĞ»º´æ£¬
-		// ÏÂ´ÎÔÙĞ´Integer i5 = 127Ê±£¬¾Í»áÖ±½Ó´Ó»º´æÖĞÈ¡£¬¾Í²»»ánewÁË
-		Integer i4 = 127;// ±àÒëÊ±±»·­Òë³É£ºInteger i4 = Integer.valueOf(127);
+		System.out.println(i == i2); // Integerä¼šè‡ªåŠ¨æ‹†ç®±ä¸ºintï¼Œæ‰€ä»¥ä¸ºtrue
+		System.out.println(i == i3); // trueï¼Œç†ç”±åŒä¸Š
+		// Integer.valueOf()å‡½æ•°å¯¹äº-128åˆ°127ä¹‹é—´çš„æ•°ï¼Œä¼šè¿›è¡Œç¼“å­˜ï¼Œ Integer i4 = 127æ—¶ï¼Œä¼šå°†127è¿›è¡Œç¼“å­˜ï¼Œ
+		// ä¸‹æ¬¡å†å†™Integer i5 = 127æ—¶ï¼Œå°±ä¼šç›´æ¥ä»ç¼“å­˜ä¸­å–ï¼Œå°±ä¸ä¼šnewäº†
+		Integer i4 = 127;// ç¼–è¯‘æ—¶è¢«ç¿»è¯‘æˆï¼šInteger i4 = Integer.valueOf(127);
 		Integer i5 = 127;
 		System.out.println(i4 == i5);// true
 		Integer i6 = 128;
-		Integer i7 = 128;// ±àÒëÊ±±»·­Òë³É:Integer i7 = new Integer (128)
+		Integer i7 = 128;// ç¼–è¯‘æ—¶è¢«ç¿»è¯‘æˆ:Integer i7 = new Integer (128)
 		System.out.println(i6 == i7);// false
 		Integer i8 = new Integer(127);
 		System.out.println(i5 == i8); // false
@@ -39,17 +39,17 @@ public class IntergerTest {
 		System.out.println(i11 == i12); // false
 		System.out.println(i11 == i12 + i13); // true
 		/*
-		 * 1£¬ÎŞÂÛÈçºÎ£¬IntegerÓënew
-		 * Integer²»»áÏàµÈ¡£²»»á¾­Àú²ğÏä¹ı³Ì£¬new³öÀ´µÄ¶ÔÏó´æ·ÅÔÚ¶Ñ£¬¶ø·ÇnewµÄInteger³£Á¿ÔòÔÚ³£Á¿³Ø
-		 * £¨ÔÚ·½·¨Çø£©£¬ËûÃÇµÄÄÚ´æµØÖ·²»Ò»Ñù£¬ËùÒÔÎªfalse¡£
+		 * 1ï¼Œæ— è®ºå¦‚ä½•ï¼ŒIntegerä¸new
+		 * Integerä¸ä¼šç›¸ç­‰ã€‚ä¸ä¼šç»å†æ‹†ç®±è¿‡ç¨‹ï¼Œnewå‡ºæ¥çš„å¯¹è±¡å­˜æ”¾åœ¨å †ï¼Œè€Œénewçš„Integerå¸¸é‡åˆ™åœ¨å¸¸é‡æ± 
+		 * ï¼ˆåœ¨æ–¹æ³•åŒºï¼‰ï¼Œä»–ä»¬çš„å†…å­˜åœ°å€ä¸ä¸€æ ·ï¼Œæ‰€ä»¥ä¸ºfalseã€‚
 		 * 
-		 * 2£¬Á½¸ö¶¼ÊÇ·Çnew³öÀ´µÄInteger£¬Èç¹ûÊıÔÚ-128µ½127Ö®¼ä£¬ÔòÊÇtrue,·ñÔòÎªfalse¡£ÒòÎªjavaÔÚ±àÒëInteger
-		 * i2 = 128µÄÊ±ºò,±»·­Òë³É£ºInteger i2 =
-		 * Integer.valueOf(128);¶øvalueOf()º¯Êı»á¶Ô-128µ½127Ö®¼äµÄÊı½øĞĞ»º´æ¡£
+		 * 2ï¼Œä¸¤ä¸ªéƒ½æ˜¯énewå‡ºæ¥çš„Integerï¼Œå¦‚æœæ•°åœ¨-128åˆ°127ä¹‹é—´ï¼Œåˆ™æ˜¯true,å¦åˆ™ä¸ºfalseã€‚å› ä¸ºjavaåœ¨ç¼–è¯‘Integer
+		 * i2 = 128çš„æ—¶å€™,è¢«ç¿»è¯‘æˆï¼šInteger i2 =
+		 * Integer.valueOf(128);è€ŒvalueOf()å‡½æ•°ä¼šå¯¹-128åˆ°127ä¹‹é—´çš„æ•°è¿›è¡Œç¼“å­˜ã€‚
 		 * 
-		 * 3£¬Á½¸ö¶¼ÊÇnew³öÀ´µÄ,¶¼Îªfalse¡£»¹ÊÇÄÚ´æµØÖ·²»Ò»Ñù¡£
+		 * 3ï¼Œä¸¤ä¸ªéƒ½æ˜¯newå‡ºæ¥çš„,éƒ½ä¸ºfalseã€‚è¿˜æ˜¯å†…å­˜åœ°å€ä¸ä¸€æ ·ã€‚
 		 * 
-		 * 4£¬intºÍInteger(ÎŞÂÛnew·ñ)±È£¬¶¼Îªtrue£¬ÒòÎª»á°ÑInteger×Ô¶¯²ğÏäÎªintÔÙÈ¥±È¡£
+		 * 4ï¼Œintå’ŒInteger(æ— è®ºnewå¦)æ¯”ï¼Œéƒ½ä¸ºtrueï¼Œå› ä¸ºä¼šæŠŠIntegerè‡ªåŠ¨æ‹†ç®±ä¸ºintå†å»æ¯”ã€‚
 		 */
 	}
 }
