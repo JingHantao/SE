@@ -1,38 +1,36 @@
 package com.atMoon.abstractclass;
 
-import com.atMoon.interfaces.interfaceTest;
-
 public abstract class Fatherclass {
-	// ³éÏó·½·¨
-	//³éÏó·½·¨¿ÉÒÔÓĞpublic¡¢protectedºÍdefaultÕâĞ©ĞŞÊÎ·û
+	// æŠ½è±¡æ–¹æ³•
+	//æŠ½è±¡æ–¹æ³•å¯ä»¥æœ‰publicã€protectedå’Œdefaultè¿™äº›ä¿®é¥°ç¬¦
 	abstract void sayhello();
 
-	// 1.³éÏóÀà¿ÉÒÔÓĞ¹¹ÔìÆ÷
+	// 1.æŠ½è±¡ç±»å¯ä»¥æœ‰æ„é€ å™¨
 	public Fatherclass() {
 	}
 
-	// 2.Ëü¿ÉÒÔÓĞÄ¬ÈÏµÄ·½·¨ÊµÏÖ
+	// 2.å®ƒå¯ä»¥æœ‰é»˜è®¤çš„æ–¹æ³•å®ç°
 	public void method1() {
-		System.out.println("Fatherclass:µ÷ÓÃÁËmethod1():");
+		System.out.println("Fatherclass:è°ƒç”¨äº†method1():");
 	}
 
-	// ·½·¨ÖØÔØ:Overload(¶àÌ¬)
+	// æ–¹æ³•é‡è½½:Overload(å¤šæ€)
 	public void method1(int a) {
-		System.out.println("Fatherclass:µ÷ÓÃÁËmethod1(int a):");
+		System.out.println("Fatherclass:è°ƒç”¨äº†method1(int a):");
 	}
 
 	//
 	public void method1(int a, int b) {
-		System.out.println("Fatherclass:µ÷ÓÃÁËmethod1(int a,int b):");
+		System.out.println("Fatherclass:è°ƒç”¨äº†method1(int a,int b):");
 	}
 
 	//
 	public int method2() {
-		System.out.println("Fatherclass:µ÷ÓÃÁËmethod2():");
+		System.out.println("Fatherclass:è°ƒç”¨äº†method2():");
 		return 1;
 	}
 
-	//³éÏó·½·¨¿ÉÒÔÓĞmain·½·¨²¢ÇÒÎÒÃÇ¿ÉÒÔÔËĞĞËü
+	//æŠ½è±¡æ–¹æ³•å¯ä»¥æœ‰mainæ–¹æ³•å¹¶ä¸”æˆ‘ä»¬å¯ä»¥è¿è¡Œå®ƒ
 	public static void main(String[] args) {
 		Fatherclass fatherclass = new ChildClass();
 		fatherclass.sayhello();
@@ -41,18 +39,18 @@ public abstract class Fatherclass {
 	}
 }
 
-// 3.×ÓÀàÊ¹ÓÃextends¹Ø¼ü×ÖÀ´¼Ì³Ğ³éÏóÀà¡£
-// Èç¹û×ÓÀà²»ÊÇ³éÏóÀàµÄ»°£¬ËüĞèÒªÌá¹©³éÏóÀàÖĞËùÓĞÉùÃ÷µÄ·½·¨µÄÊµÏÖ¡£
-//4.³ıÁËÄã²»ÄÜÊµÀı»¯³éÏóÀàÖ®Íâ£¬ËüºÍÆÕÍ¨JavaÀàÃ»ÓĞÈÎºÎÇø±ğ
+// 3.å­ç±»ä½¿ç”¨extendså…³é”®å­—æ¥ç»§æ‰¿æŠ½è±¡ç±»ã€‚
+// å¦‚æœå­ç±»ä¸æ˜¯æŠ½è±¡ç±»çš„è¯ï¼Œå®ƒéœ€è¦æä¾›æŠ½è±¡ç±»ä¸­æ‰€æœ‰å£°æ˜çš„æ–¹æ³•çš„å®ç°ã€‚
+//4.é™¤äº†ä½ ä¸èƒ½å®ä¾‹åŒ–æŠ½è±¡ç±»ä¹‹å¤–ï¼Œå®ƒå’Œæ™®é€šJavaç±»æ²¡æœ‰ä»»ä½•åŒºåˆ«
 class ChildClass extends Fatherclass {
-	@Override//ÖØĞ´·½·¨
+	@Override//é‡å†™æ–¹æ³•
 	void sayhello() {
 		// TODO Auto-generated method stub
 		System.out.println("ChildClass:Hello:");
 	}
 	@Override
 	public void method1() {
-		System.out.println("ChildClass:ÖØĞ´ÁËmethod1():");
+		System.out.println("ChildClass:é‡å†™äº†method1():");
 	}
 	
 

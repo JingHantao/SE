@@ -2,7 +2,6 @@ package com.atMoon.zhengzebiaodashi;
 
 public class ZhengZeTest {
 	
-	
 	public static void main(String [] args) {
 		//replaceFirst 和 replaceAll 方法用来替换匹配正则表达式的文本。
 		//不同的是，replaceFirst 替换首次匹配，replaceAll 替换所有匹配

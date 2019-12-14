@@ -7,10 +7,6 @@ package com.atMoon.list;
  3.对于新增和删除操作add和remove，LinedList比较占优势，因为ArrayList要移动数据。 
  */
 
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.Socket;
-
 public class ListTest {
 
 	/**
@@ -18,7 +14,8 @@ public class ListTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		 System.out.println((int)(1.8));
+		String str = "hfhf_T0";
+		 System.out.println(str.substring(str.length()-2,str.length()));
 
 	}
 
