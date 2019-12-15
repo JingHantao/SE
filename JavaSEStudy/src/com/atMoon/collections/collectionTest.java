@@ -1,35 +1,35 @@
 package com.atMoon.collections;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
-
-import org.junit.Test;
 
 public class collectionTest {
 
 	@Test
 	public void arrayListTest() {
 		Collection collection=new ArrayList();
-		collection.add("ÕÅÈı");
-		//ËäÈ»¼¯ºÏÀï²»ÄÜ·Å»ù±¾ÀàĞÍµÄÖµ,µ«ÊÇjavaÖ§³Ö×Ô¶¯×°Ïä
+		collection.add("å¼ ä¸‰");
+		//è™½ç„¶é›†åˆé‡Œä¸èƒ½æ”¾åŸºæœ¬ç±»å‹çš„å€¼,ä½†æ˜¯javaæ”¯æŒè‡ªåŠ¨è£…ç®±
 		collection.add(6);
 		collection.add("Moon");
-		System.out.println("collection¼¯ºÏÔªËØ¸öÊı:"+collection.size());
+		System.out.println("collectioné›†åˆå…ƒç´ ä¸ªæ•°:"+collection.size());
 		collection.remove(6);
-		System.out.println("collection¼¯ºÏÔªËØ¸öÊı:"+collection.size());
-		System.out.println("collection¼¯ºÏº¬ÓĞ \"ÕÅÈı\":"+collection.contains("ÕÅÈı"));
-		collection.add("ÀîËÄ");
-		System.out.println("collection¼¯ºÏ:"+collection);
+		System.out.println("collectioné›†åˆå…ƒç´ ä¸ªæ•°:"+collection.size());
+		System.out.println("collectioné›†åˆå«æœ‰ \"å¼ ä¸‰\":"+collection.contains("å¼ ä¸‰"));
+		collection.add("æå››");
+		System.out.println("collectioné›†åˆ:"+collection);
 		
 		Collection books=new HashSet();
 		books.add("Moon");
 		books.add("Java");
-		System.out.println("collectionº¬ÓĞbooks?"+collection.contains(books));
+		System.out.println("collectionå«æœ‰books?"+collection.contains(books));
 		collection.removeAll(books);
-		System.out.println("collection¼¯ºÏ:"+collection);
+		System.out.println("collectioné›†åˆ:"+collection);
 		collection.clear();
-		System.out.println("collection¼¯ºÏ:"+collection);
+		System.out.println("collectioné›†åˆ:"+collection);
 	
 		
 	}

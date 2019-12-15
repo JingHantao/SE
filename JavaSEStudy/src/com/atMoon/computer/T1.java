@@ -1,9 +1,6 @@
 package com.atMoon.computer;
 
-import java.awt.Point;
 import java.util.Scanner;
-
-import com.atMoon.interfaces.interfaceTest;
 
 public class T1 {
 
