@@ -30,8 +30,6 @@ public class collectionTest {
 		System.out.println("collection集合:"+collection);
 		collection.clear();
 		System.out.println("collection集合:"+collection);
-	
-		
 	}
 	
 //	public static void main(String [] args) {
